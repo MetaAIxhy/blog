@@ -1,38 +1,12 @@
 ---
-title: Hello World
+title: 第一篇日志
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+hello world！
 
-## Quick Start
+##hexo
+在对比多个工具之后，决定使用hexo来快速的生成页面，主要是因为这个和git集成得比较好。
 
-### Create a new post
+不过做为一名专业的前端，当然不会满足于此。
 
-``` bash
-$ hexo new "My New Post"
-```
+基于hexo系统进行自己的定制才是我的目标，今天就先到这里。
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
