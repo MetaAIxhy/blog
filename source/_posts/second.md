@@ -1,7 +1,7 @@
 ---
 title: hexo和github.io页搭建博客回顾
 date: 2016-05-11 22:24:40
-tags: 代码
+tags: hexo
 ---
 
 ## 安装
@@ -28,4 +28,13 @@ themes文件夹下landscape就是默认的样式了,上网一搜，能用的样�
 
 然后进入languages文件夹下修改了一下语言的翻译，今天就先这样吧。
 
+## next样式
+### 20160513
 
+将博客主题更换为next样式，http://theme-next.iissnan.com/
+
+整个安装还是比较容易的，就是tags生成这里比较坑。需要手动的去运行一次命令之后才能自动生成，http://theme-next.iissnan.com/theme-settings.html#categories-page
+
+之间还打错过单词，结果就是找了好久原因才发现是单词打错了。由此可见这种构造方式的一个缺陷，那就是debug极为困难，这或许就是构造方便的代价。
+
+另外觉得首页应该显示文章的缩略而不是全部，简单的修改了下css样式隐藏掉多余的部分就ok了，或许过阵子改下生成代码更好。
