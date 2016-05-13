@@ -68,7 +68,7 @@
 <link href="/blog/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="代码," />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -94,7 +94,7 @@
 <meta property="og:description" content="安装整个过程还算比较顺利，因为之前用过git和reactNative for Android还有一些别东西，环境比较完善,没有遇到什么麻烦。
 基本上参照这个网址上的来配置 http://www.jianshu.com/p/465830080ea9
 就是最后运行hexo deploy命令的时候，什么都没有发生。搜索了一下，是因为_config.yml 最后的deploy配置那里，冒号后没有加空格造成">
-<meta property="og:updated_time" content="2016-05-11T15:20:30.962Z">
+<meta property="og:updated_time" content="2016-05-13T16:01:52.042Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo和github.io页搭建博客回顾">
 <meta name="twitter:description" content="安装整个过程还算比较顺利，因为之前用过git和reactNative for Android还有一些别东西，环境比较完善,没有遇到什么麻烦。
@@ -287,6 +287,10 @@
 <p>回到landscape文件夹看其实现，模板用的ejs,构建用grunt,css用stylus,大体上还是比较简单。</p>
 <p>默认使用的是google的jQuery，无法加载。于是下载jQuery到\themes\landscape\source\js的文件夹内，去到\themes\landscape\layout_partial的文件夹。把footer.ejs和after-footer.ejs的相应代码修改为引用内地的jQuery就ok了。</p>
 <p>然后进入languages文件夹下修改了一下语言的翻译，今天就先这样吧。</p>
+<h2 id="next样式"><a href="#next样式" class="headerlink" title="next样式"></a>next样式</h2><h3 id="20160513"><a href="#20160513" class="headerlink" title="20160513"></a>20160513</h3><p>将博客主题更换为next样式，<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a></p>
+<p>整个安装还是比较容易的，就是tags生成这里比较坑。需要手动的去运行一次命令之后才能自动生成，<a href="http://theme-next.iissnan.com/theme-settings.html#categories-page" target="_blank" rel="external">http://theme-next.iissnan.com/theme-settings.html#categories-page</a></p>
+<p>之间还打错过单词，结果就是找了好久原因才发现是单词打错了。由此可见这种构造方式的一个缺陷，那就是debug极为困难，这或许就是构造方便的代价。</p>
+<p>另外觉得首页应该显示文章的缩略而不是全部，简单的修改了下css样式隐藏掉多余的部分就ok了，或许过阵子改下生成代码更好。</p>
 
       
     </div>
@@ -308,7 +312,7 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/代码/" rel="tag">#代码</a>
+            <a href="/blog/tags/hexo/" rel="tag">#hexo</a>
           
         </div>
       
@@ -434,7 +438,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初步调整"><span class="nav-number">2.</span> <span class="nav-text">初步调整</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初步调整"><span class="nav-number">2.</span> <span class="nav-text">初步调整</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next样式"><span class="nav-number">3.</span> <span class="nav-text">next样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#20160513"><span class="nav-number">3.1.</span> <span class="nav-text">20160513</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
