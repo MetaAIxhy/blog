@@ -85,30 +85,27 @@
 
 
 <meta name="description" content="好久没有写日志了，先简单的记一下流水账，日后有空再补充吧。
-##需求大体是实现了个克隆版的知乎，前端的工作大概是后台管理系统（账号，发帖，主题），分享到微信的页面。
-##技术选型vue+bootstrap+adminLTE;
-##工具require.js 做依赖管理，mock.js做测试.
-##一些坑
-###requirejs之前用avalon的时候就遇到过，requirejs动态引入css和模板">
+需求大体是实现了个克隆版的知乎，前端的工作大概是后台管理系统（账号，发帖，主题），分享到微信的页面。
+技术选型vue+bootstrap+adminLTE;
+工具require.js 做依赖管理，mock.js做测试.
+一些坑requirejs之前用avalon的时候就遇到过，requirejs动态引入css和模板的问题，这个用法在文档上">
 <meta property="og:type" content="article">
 <meta property="og:title" content="外包项目回顾">
 <meta property="og:url" content="http://metaaixhy.github.io/2016/12/05/20161205/index.html">
 <meta property="og:site_name" content="心成">
 <meta property="og:description" content="好久没有写日志了，先简单的记一下流水账，日后有空再补充吧。
-##需求大体是实现了个克隆版的知乎，前端的工作大概是后台管理系统（账号，发帖，主题），分享到微信的页面。
-##技术选型vue+bootstrap+adminLTE;
-##工具require.js 做依赖管理，mock.js做测试.
-##一些坑
-###requirejs之前用avalon的时候就遇到过，requirejs动态引入css和模板">
-<meta property="og:updated_time" content="2016-12-05T16:38:24.718Z">
+需求大体是实现了个克隆版的知乎，前端的工作大概是后台管理系统（账号，发帖，主题），分享到微信的页面。
+技术选型vue+bootstrap+adminLTE;
+工具require.js 做依赖管理，mock.js做测试.
+一些坑requirejs之前用avalon的时候就遇到过，requirejs动态引入css和模板的问题，这个用法在文档上">
+<meta property="og:updated_time" content="2016-12-05T16:40:42.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="外包项目回顾">
 <meta name="twitter:description" content="好久没有写日志了，先简单的记一下流水账，日后有空再补充吧。
-##需求大体是实现了个克隆版的知乎，前端的工作大概是后台管理系统（账号，发帖，主题），分享到微信的页面。
-##技术选型vue+bootstrap+adminLTE;
-##工具require.js 做依赖管理，mock.js做测试.
-##一些坑
-###requirejs之前用avalon的时候就遇到过，requirejs动态引入css和模板">
+需求大体是实现了个克隆版的知乎，前端的工作大概是后台管理系统（账号，发帖，主题），分享到微信的页面。
+技术选型vue+bootstrap+adminLTE;
+工具require.js 做依赖管理，mock.js做测试.
+一些坑requirejs之前用avalon的时候就遇到过，requirejs动态引入css和模板的问题，这个用法在文档上">
 
 
 
@@ -309,13 +306,12 @@
 
       
         <p>好久没有写日志了，先简单的记一下流水账，日后有空再补充吧。</p>
-<p>##需求<br>大体是实现了个克隆版的知乎，前端的工作大概是后台管理系统（账号，发帖，主题），分享到微信的页面。</p>
-<p>##技术选型<br>vue+bootstrap+adminLTE;</p>
-<p>##工具<br>require.js 做依赖管理，mock.js做测试.</p>
-<p>##一些坑</p>
-<p>###requirejs<br>之前用avalon的时候就遇到过，requirejs动态引入css和模板的问题，这个用法在文档上描述得不是很清楚。<br>其实这本质上是require的插件，用法有几点要注意：<br>1.将插件放在requirejs同一目录下；<br>2.引用的时候是define（”name!xxx”）,其中name就是插件的文件名，比如css就是css!xxxx;<br>用avalon的时候没有那么多问题，就是因为avalon不当内置了require，而且把css和模板插件也内置了。<br>这一点requirejs的文档上一笔带过，最后我还是看源码才搞明白的…</p>
-<p>###模板传递json数据的bug<br>保护特殊字符串的文本用json化后在前端再还原，因为特殊字符的存在会出现bug。<br>这个问题之前在之前一个用php的项目中就已经遇到过，python下依旧存在<br>1.服务端,封装一下将对象转换为字符串的方法，将\替换为\\,单引号替换为\‘;<br>2.前端，在使用JSON.parse之前，对特殊字符进行替换，\n替换为\n， \r替换为\r;<br>这个问题可以看出，模板传递数据这一点上，还是容易出问题。</p>
-<p>###微信打开APP页面<br>这也是一个之前遇到的问题，主要是微信的限制，目前还是和以前一样存在限制，以后可能会有变化。<br>使用应用宝可以跳转出来，但是无法传递参数到指定的页面；<br>最后的方案是弹出一个提示用第三方浏览器打开，然后就可以用url schema向app传递参数了。</p>
+<h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>大体是实现了个克隆版的知乎，前端的工作大概是后台管理系统（账号，发帖，主题），分享到微信的页面。</p>
+<h2 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h2><p>vue+bootstrap+adminLTE;</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>require.js 做依赖管理，mock.js做测试.</p>
+<h2 id="一些坑"><a href="#一些坑" class="headerlink" title="一些坑"></a>一些坑</h2><h3 id="requirejs"><a href="#requirejs" class="headerlink" title="requirejs"></a>requirejs</h3><p>之前用avalon的时候就遇到过，requirejs动态引入css和模板的问题，这个用法在文档上描述得不是很清楚。<br>其实这本质上是require的插件，用法有几点要注意：<br>1.将插件放在requirejs同一目录下；<br>2.引用的时候是define（”name!xxx”）,其中name就是插件的文件名，比如css就是css!xxxx;<br>用avalon的时候没有那么多问题，就是因为avalon不当内置了require，而且把css和模板插件也内置了。<br>这一点requirejs的文档上一笔带过，最后我还是看源码才搞明白的…</p>
+<h3 id="模板传递json数据的bug"><a href="#模板传递json数据的bug" class="headerlink" title="模板传递json数据的bug"></a>模板传递json数据的bug</h3><p>保护特殊字符串的文本用json化后在前端再还原，因为特殊字符的存在会出现bug。<br>这个问题之前在之前一个用php的项目中就已经遇到过，python下依旧存在<br>1.服务端,封装一下将对象转换为字符串的方法，将\替换为\\,单引号替换为\‘;<br>2.前端，在使用JSON.parse之前，对特殊字符进行替换，\n替换为\n， \r替换为\r;<br>这个问题可以看出，模板传递数据这一点上，还是容易出问题。</p>
+<h3 id="微信打开APP页面"><a href="#微信打开APP页面" class="headerlink" title="微信打开APP页面"></a>微信打开APP页面</h3><p>这也是一个之前遇到的问题，主要是微信的限制，目前还是和以前一样存在限制，以后可能会有变化。<br>使用应用宝可以跳转出来，但是无法传递参数到指定的页面；<br>最后的方案是弹出一个提示用第三方浏览器打开，然后就可以用url schema向app传递参数了。</p>
 
       
     </div>
@@ -457,7 +453,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术选型"><span class="nav-number">2.</span> <span class="nav-text">技术选型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具"><span class="nav-number">3.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些坑"><span class="nav-number">4.</span> <span class="nav-text">一些坑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#requirejs"><span class="nav-number">4.1.</span> <span class="nav-text">requirejs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板传递json数据的bug"><span class="nav-number">4.2.</span> <span class="nav-text">模板传递json数据的bug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微信打开APP页面"><span class="nav-number">4.3.</span> <span class="nav-text">微信打开APP页面</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
